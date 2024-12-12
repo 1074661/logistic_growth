@@ -65,7 +65,7 @@ library(dplyr)
 # Scenario 1. K >> N0, t is small
 
 data_subset1 <- growth_data %>% 
-  filter(t<1500) %>% 
+  filter(t<1500) %>% # Filtering dataset to timepoints below t=1500 to ensure capture only of period of exponential growth of E. coli population
   mutate(N_log = log(N))
 
 linearmodel1 <- lm(N_log ~ t, data_subset1)
@@ -73,7 +73,7 @@ summary(linearmodel1)
 
 #Scenario 2. N(t) = K
 
-data_subset2 <- growth_data %>% filter(t>2500)
+data_subset2 <- growth_data %>% filter(t>2500) # Filtering dataset to timepoints above t=2500 to ensure capture of E. coli population held at environmental carrying capacity
 
 linearmodel2 <- lm(N ~ 1, data_subset2)
 summary(linearmodel2)
