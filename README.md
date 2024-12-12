@@ -94,7 +94,7 @@ The summary table provides the parameters for Linear Model 1 (in the form 'y = a
 
 Per the summary table, intercept (ln(N0)) is 6.8941709; therefore, **N0 is 986** (since e^6.8941709 = 986.5074723).
 
-Per the summary table, t(r) is 0.0100086; therefore, **r is 0.01**. 
+Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**. 
 
 ## Linear Model 2 (large t)
 
