@@ -182,4 +182,6 @@ ggplot() +
   )
 ```
 
+#### Insert figure comparing exponential and logistic growth curves.
+
 This graph illustrates the difference between exponential and logistic models of bacterial population growth. The graph suggests that over short time periods, accurate forecasting of bacterial population size is possible using an exponential growth model, while over long time periods, accurate forecasting of bacterial population size can only be achieved using a logistic growth model that accounts for limited resources in the environment, defined by carrying capacity (K).
