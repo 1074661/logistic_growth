@@ -2,13 +2,13 @@
 
 # Question 1
 
-Experimental data from the file 'experiment.csv' are measurements obtained from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture through different phases of population growth. During the lag phase of E. coli population growth, the population size of this bacterium (number of bacteria) in culture is small. During the exponential phase of E. coli population growth, the population size of this bacterium in culture is rapidly increasing. As the population size of the bacterium increases and approaches the environmental carrying capacity in the test tube (governed by limiting resources), E. coli enters stationary phase of population growth. 
+From a simulated experiment, the experimental data in the file 'experiment.csv' are measurements obtained from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture through different phases of logistic population growth. During the lag phase of E. coli logistic population growth, the population size of this bacterium (number of bacteria) in culture is small. During the exponential phase of E. coli logistic population growth, the population size of this bacterium in culture is rapidly increasing. As the population size of the bacterium increases and approaches the environmental carrying capacity in the test tube (governed by limiting resources), E. coli enters stationary equilibrium phase of logistic population growth. 
 
 ## Plotting data
 
 Script 1 (plot_data.R) plots the dataset from experiment.csv. The x-axis shows time (t) and the y-axis shows the number of bacteria (N). Plotting was conducted using ggplot2 package on R to produce publication-quality figures. 
 
-The second plot in this script is a semi-log plot with a linear x-axis and a log-transferred y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
+The second plot in this script is a semi-log plot with a linear x-axis and a log-transformed y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
 
 ```{r}
 #Code to plot logistic growth data
