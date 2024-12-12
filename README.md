@@ -11,9 +11,11 @@ Script 1 (plot_data.R) plots the dataset from experiment.csv. The x-axis shows t
 The second plot in this script is a semi-log plot with a linear x-axis and a log-transformed y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
 
 ```{r}
-#Code to plot logistic growth data
+
 install.packages("ggplot2")
 library(ggplot2)
+
+#Code to plot logistic growth data
 growth_data <- read.csv("experiment.csv")
 
 #Logistic plot
@@ -45,7 +47,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme_bw() +
   theme(legend.position = 'none')
 ```
-#### Logistic growth plot lag phase, exponential phase and stationary phase of bacterial population growth in temporal order
+#### Logistic growth plot (lag phase, exponential phase and stationary phase of bacterial population growth in temporal order)
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
 #### Semi-log plot showing relationship between t and N
@@ -63,6 +65,7 @@ To generate linear models (t as explanatory variable and log_N as response varia
 The code below shows the subsetting of data and generation of linear models. 
 
 ```{r}
+
 install.packages("dplyr")
 library(dplyr)
 
@@ -109,6 +112,10 @@ Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60000000000
 Validation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using my filled-in Script 3 (plot_data_and_model.R):
 
 ```{r}
+
+install.packages("ggplot2")
+library(ggplot2)
+
 N0 <- 986 # Initial bacterial population size
 
 r <- 0.01 # Growth rate
@@ -124,9 +131,6 @@ logistic_function <- function(t) {
 }
 
 # Superimposing model over experimental data
-
-install.packages("ggplot2")
-library(ggplot2)
 
 ggplot(aes(t, N), data = growth_data) +
   
@@ -161,6 +165,10 @@ Therefore, at time = 4980 minutes, bacterial population size would be 6.98x10^13
 Code used to construct a graph comparing the exponential and logistic growth curves is shown below.
 
 ```{r}
+
+install.packages("ggplot2")
+library(ggplot2)
+
 # Defining logistic function
 logistic_function <- function(t) {
   N <- (N0 * K * exp(r * t)) / (K - N0 + N0 * exp(r * t))
