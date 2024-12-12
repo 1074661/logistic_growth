@@ -49,7 +49,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
 #### Semi-log plot showing relationship between t and N
 ![image](https://github.com/user-attachments/assets/c1dc79dd-5996-4225-ad95-5cf1d46cc995)
 
-#### Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) and large (red)).
+#### Semi-log plot showing relationship between t and N (with colour demarcating when t is low (light blue) and high (red)).
 ![image](https://github.com/user-attachments/assets/e092a0f4-6059-49ca-a446-88124d35b127)
 
 ## Fitting linear models
