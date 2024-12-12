@@ -90,7 +90,7 @@ The code below shows how 'logistic_fun' function was generated. INSERT.
 
 #### Insert summary table for Linear Model 1
 
-The summary table provides the parameters for Linear Model 1 (in the form 'y = a + bx') where $$ln(N) = ln(N0) + rt
+The summary table provides the parameters for Linear Model 1 (in the form 'y = a + bx') where $$ln(N) = ln(N0) + rt$$
 
 Per the summary table, intercept (ln(N0)) is 6.8941709; therefore, **N0 is 986** (since e^6.8941709 = 986.5074723).
 
