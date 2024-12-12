@@ -100,7 +100,7 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60000000000**.
 
-Confirmation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using filled-in Script 3 (plot_data_and_model.R):
+Validation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using my filled-in Script 3 (plot_data_and_model.R):
 
 ```{r}
 N0 <- 986 # Initial bacterial population size
