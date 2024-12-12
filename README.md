@@ -43,12 +43,17 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme_bw() +
   theme(legend.position = 'none')
 ```
+#### Logistic growth plot
 
-#### INSERT Logistic growth plot
+![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
-#### INSERT Semi-log plot showing relationship between t and N
+#### Semi-log plot showing relationship between t and N
 
-#### INSERT Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) or large (red)).
+![image](https://github.com/user-attachments/assets/c1dc79dd-5996-4225-ad95-5cf1d46cc995)
+
+#### Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) and large (red)).
+
+![image](https://github.com/user-attachments/assets/e092a0f4-6059-49ca-a446-88124d35b127)
 
 ## Fitting linear models
 
