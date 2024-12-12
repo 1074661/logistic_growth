@@ -98,7 +98,7 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 #### Insert summary table for Linear Model 2
 
-Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60,000,000,000**.
+Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60000000000**.
 
 Confirmation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using filled-in Script 3 (plot_data_and_model.R):
 
@@ -137,7 +137,7 @@ Under exponential population growth, N(t) = N0 * e^(r*t)
 
 Substituting my estimates of N0 and r to calculate bacterial population size at t=4980 min: N(4980) = 986 * e^(0.01*4980) = 4.19 x 10^24
 
-Under logistic population growth, bacterial population size at t=4980 min would be 6 x 10^10 since by this timepoint the bacterial population has already reached and is remaining constant at the environmental carrying capacity.
+Under logistic population growth, bacterial population size at t=4980 min would be 6 x 10^10 since by this timepoint the bacterial population would have already reached and be held constant at the environmental carrying capacity.
 
 Therefore, at time = 4980 minutes, bacterial population size would be 6.98x10^13 times larger under exponential growth than under logistic growth (since (4.19 x 10^24)/(6 x 10^10 = 6.98x10^13)). 
 
