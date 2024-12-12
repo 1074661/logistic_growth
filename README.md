@@ -80,7 +80,7 @@ summary(linearmodel2)
 ```
 ## Plotting my own models
 
-Script 3 (plot_data_and_model.R) generates the 'logistic_function' function. This allows generation of my own logistic curve, in which logistic parameters (N0, r and K) can be modified, followed by superimposition onto "experiment.csv" dataset. This enables evaluation of whether my own logistic parameters are consistent with those underlying the logistic curve in "experiment.csv" dataset. 
+Script 3 (plot_data_and_model.R) generates the 'logistic_function' function. This allows generation of my own logistic curve, in which logistic parameters (N0, r and K) can be modified, followed by superimposition onto "experiment.csv" dataset. This enables evaluation of whether my own logistic parameters are consistent with the logistic parameters underlying the logistic curve in "experiment.csv" dataset. 
 
 ## Results
 
