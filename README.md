@@ -2,7 +2,7 @@
 
 # Question 1
 
-Experimental data from the file 'experiment.csv' are measurements obtained from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture through different phases of population growth. During the lag phase of E. coli population growth, the population size of this bacterium (number of bacteria) in culture is small. During the exponential phase of E. coli population growth, the population size of this bacterium in culture is rapidly increasing. As the population size of the bacterium increases and approaches the environmental carrying capacity in the test tube (governed by limiting resources), E. coli enters stationary phase of population growth. 
+Experimental data from the file 'experiment.csv' are measurements obtained from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture through different phases of population growth. During the lag phase of Escherichia coli population growth, the population size of this bacterium (number of bacteria) in culture is small. During the exponential phase of Escherichia coli population growth, the population size of this bacterium in culture is rapidly increasing. As the population size of the bacterium increases and approaches the environmental carrying capacity in the test tube (governed by limiting resources), Escherichia coli enters stationary phase of population growth. 
 
 ## Plotting data
 
