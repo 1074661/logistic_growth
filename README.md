@@ -2,9 +2,9 @@
 
 # Question 1
 
-## Plotting data
+Experimental data from the file 'experiment.csv' are measurements recorded from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture. When the population size of this bacterium in culture is small, this corresponds with the lag phase of bacterial population growth. When the population size of this bacterium in culture is rapidly increasing, this corresponds with the exponential phase of bacterial population growth. When the population size of this bacterium in culture is large and approaching the environmental carrying capacity in the test tube (governed by limiting resources), the following phase of bacterial population growth is the stationary phase. 
 
-Experimental data from the file 'experiment.csv' are measurements recorded from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture. When the population size of this bacterium in culture is small, this corresponds with the lag phase of bacterial population growth. After the exponential phase of bacterial population growth, the population size of this bacterium in culture is large. This then corresponds with the stationary phase of bacterial population growth.
+## Plotting data
 
 Script 1 (plot_data.R) plots the dataset from experiment.csv. The x-axis shows time (t) and the y-axis shows the number of bacteria (N). Plotting was conducted using ggplot2 package on R to produce publication-quality figures. 
 
