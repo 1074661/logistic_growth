@@ -44,11 +44,11 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme(legend.position = 'none')
 ```
 
-#### Insert Logistic growth plot
+#### INSERT Logistic growth plot
 
-#### Insert Semi-log plot showing relationship between t and N
+#### INSERT Semi-log plot showing relationship between t and N
 
-#### Insert Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) or large (red)).
+#### INSERT Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) or large (red)).
 
 ## Fitting linear models
 
@@ -86,7 +86,7 @@ Script 3 (plot_data_and_model.R) produces the 'logistic_function' function. This
 
 ## Linear Model 1 (small t)
 
-#### Insert summary table for Linear Model 1
+#### INSERT summary table for Linear Model 1
 
 The summary table provides the parameters for Linear Model 1 (in the form 'y = a + bx') where $$ln(N) = ln(N0) + rt$$
 
@@ -96,7 +96,7 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 ## Linear Model 2 (large t)
 
-#### Insert summary table for Linear Model 2
+#### INSERT summary table for Linear Model 2
 
 Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60000000000**.
 
@@ -125,7 +125,7 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_point()
 ```
-#### Insert figure of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
+#### INSERT figure of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
 
 This figure validates determination by linear model analyses of the logistic parameters underlying the experimental dataset, since the superimposed linear function is consistent with experimental datapoints. 
 
@@ -182,6 +182,6 @@ ggplot() +
   )
 ```
 
-#### Insert figure comparing exponential and logistic growth curves.
+#### INSERT figure comparing exponential and logistic growth curves.
 
 This graph illustrates the difference between exponential and logistic models of E. coli population growth. The graph suggests that over short time periods (t<1750 minutes), accurate forecasting of E. coli population size in-vitro is possible using an exponential growth model. The graph suggests that over long time periods, accurate forecasting of E. coli population size in-vitro can only be achieved using a logistic growth model that accounts for limited resources in the growth environment in-vitro, defined by carrying capacity (K). This is because the exponential growth model inaccurately predicts continual population growth under limited resource availability in the culture environment.
