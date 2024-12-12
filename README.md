@@ -139,7 +139,7 @@ Substituting my estimates of N0 and r to calculate bacterial population size at 
 
 Under logistic population growth, bacterial population size at t=4980 min would be 6 x 10^10 since by this timepoint the bacterial population would have already reached and be held constant at the environmental carrying capacity.
 
-Therefore, at time = 4980 minutes, bacterial population size would be 6.98x10^13 times larger under exponential growth than under logistic growth (since (4.19 x 10^24)/(6 x 10^10 = 6.98x10^13)). 
+Therefore, at time = 4980 minutes, bacterial population size would be 6.98x10^13 times larger under exponential growth than under logistic growth (since (4.19 x 10^24)/(6 x 10^10) = 6.98x10^13). 
 
 
 
