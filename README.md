@@ -196,6 +196,6 @@ ggplot() +
 ```
 
 #### Plot comparing exponential and logistic growth curves.
-![image](https://github.com/user-attachments/assets/1e7066f8-a5d1-4619-9ec2-016f02ab5655)
+![image](https://github.com/user-attachments/assets/8710f49e-01e1-4adc-a0e3-2096ccbae9f2)
 
 This graph illustrates the difference between exponential and logistic models of E. coli population growth. The graph suggests that over short time periods (t<1750 minutes), accurate forecasting of E. coli population size in-vitro is possible using an exponential growth model. The graph suggests that over long time periods, accurate forecasting of E. coli population size in-vitro can only be achieved using a logistic growth model that accounts for limited resources in the growth environment in-vitro, defined by carrying capacity (K). This is because the exponential growth model inaccurately predicts continual population growth under limited resource availability in the culture environment.
