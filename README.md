@@ -91,7 +91,7 @@ Script 3 (plot_data_and_model.R) produces the 'logistic_function' function. This
 
 ## Results
 
-## Linear Model 1 (small t)
+## Linear Model 1 (low t)
 
 #### Summary table for Linear Model 1
 ![image](https://github.com/user-attachments/assets/8bdcd0f7-e606-4da3-a942-758761c646d2)
@@ -102,7 +102,7 @@ Per the summary table, intercept (ln(N0)) is 6.8941709; therefore, **N0 is 986**
 
 Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**. 
 
-## Linear Model 2 (large t)
+## Linear Model 2 (high t)
 
 #### Summary table for Linear Model 2
 ![image](https://github.com/user-attachments/assets/5c94705c-4645-4f4d-acb1-fca6c98fb327)
