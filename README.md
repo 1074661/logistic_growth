@@ -9,7 +9,7 @@ Script 1 (plot_data.R) plots the dataset from experiment.csv (a simulated experi
 The second plot in this script is a semi-log plot with a linear x-axis and a log-transferred y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
 
 ```{r}
-#Script to plot logistic growth data
+#Code to plot logistic growth data
 install.packages("ggplot2")
 library(ggplot2)
 growth_data <- read.csv("experiment.csv")
