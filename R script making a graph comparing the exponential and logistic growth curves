@@ -1,0 +1,34 @@
+# Defining logistic function
+logistic_function <- function(t) {
+  N <- (N0 * K * exp(r * t)) / (K - N0 + N0 * exp(r * t))
+  return(N)
+}
+
+# Defining exponential function
+exponential_function <- function(t) {
+  N <- (N0 * exp(r * t))
+  return(N)
+}
+
+# Setting parameters estimated from linear models for both exponential and logistic functions
+N0 <- 986
+r <- 0.01
+K <- 60000000000
+
+# Plotting both functions
+ggplot() +
+  geom_function(aes(colour = "Logistic"), fun = logistic_function, linewidth = 1.2) +  # Increasing line width
+  geom_function(aes(colour = "Exponential"), fun = exponential_function, linewidth = 1.2) +  # Increasing line width
+  xlim(0, 5000) +
+  scale_y_continuous(trans = 'log10') +
+  scale_colour_manual(values = c("Logistic" = "darkgreen", "Exponential" = "darkblue")) +
+  xlab("Time (minutes)") +
+  ylab("Population size (number\nof bacteria, log10 transformed)") +  # Stacking y-axis label
+  ggtitle("Comparison of exponential and logistic\nmodels of bacterial population growth") +  # Stacking title
+  theme_bw() +
+  theme(
+    legend.title = element_blank(),
+    plot.title = element_text(face = "bold", hjust = 0.5),  # Centering title with hjust
+    axis.title = element_text(face = "bold"), # Emboldening axes labels
+    legend.text = element_text(face = "bold") # Emboldening legend labels
+  )
