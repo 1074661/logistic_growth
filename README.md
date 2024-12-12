@@ -80,7 +80,7 @@ summary(linearmodel2)
 ```
 ## Plotting my own models
 
-Script 3 (plot_data_and_model.R) generates the 'logistic_function' function. This allows generation of my own logistic curve, in which logistic parameters (N0, r and K) can be modified, followed by superimposition onto "experiment.csv" dataset. This enables evaluation of whether my own logistic parameters are consistent with the logistic parameters underlying the logistic curve in "experiment.csv" dataset. 
+Script 3 (plot_data_and_model.R) produces the 'logistic_function' function. This allows generation of my own logistic curve, in which logistic parameters (N0, r and K) can be modified. This logistic curve can be superimposed onto "experiment.csv" dataset to enable evaluation of whether my own logistic parameters are consistent with the logistic parameters underlying the logistic curve in "experiment.csv" dataset. 
 
 ## Results
 
@@ -100,8 +100,31 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 Per the summary table, intercept (K) is **6 x 10^10**. 
 
-Confirmation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below. 
+Confirmation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using filled-in Script 3 (plot_data_and_model.R) as below.
 
+```{r}
+N0 <- 986 # Initial bacterial population size
+
+r <- 0.01 # Growth rate
+
+K <- 6.00e+10 # Environmental carrying capacity 
+
+logistic_function <- function(t) {
+  
+  N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
+  
+  return(N)
+  
+}
+
+# Superimposing model over experimental data
+
+ggplot(aes(t,N), data = growth_data) +
+  
+  geom_function(fun=logistic_function, colour="red") +
+  
+  geom_point()
+```
 #### Insert figure of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
 
 This figure validates determination by linear model analyses of the logistic parameters underlying the experimental dataset, since the superimposed linear function is consistent with experimental datapoints. 
