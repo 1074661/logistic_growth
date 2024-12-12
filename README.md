@@ -141,17 +141,45 @@ Under logistic population growth, bacterial population size at t=4980 min would 
 
 Therefore, at time = 4980 minutes, bacterial population size would be 6.98x10^13 times larger under exponential growth than under logistic growth (since (4.19 x 10^24)/(6 x 10^10) = 6.98x10^13). 
 
+# Question 3
 
+Code used to construct a graph comparing the exponential and logistic growth curves is shown below.
 
+```{r}
+# Defining logistic function
+logistic_function <- function(t) {
+  N <- (N0 * K * exp(r * t)) / (K - N0 + N0 * exp(r * t))
+  return(N)
+}
 
+# Defining exponential function
+exponential_function <- function(t) {
+  N <- (N0 * exp(r * t))
+  return(N)
+}
 
+# Setting parameters estimated from linear models for both exponential and logistic functions
+N0 <- 986
+r <- 0.01
+K <- 60000000000
 
+# Plotting both functions
+ggplot() +
+  geom_function(aes(colour = "Logistic"), fun = logistic_function, linewidth = 1.2) +  # Increasing line width
+  geom_function(aes(colour = "Exponential"), fun = exponential_function, linewidth = 1.2) +  # Increasing line width
+  xlim(0, 5000) +
+  scale_y_continuous(trans = 'log10') +
+  scale_colour_manual(values = c("Logistic" = "darkgreen", "Exponential" = "darkblue")) +
+  xlab("Time (minutes)") +
+  ylab("Population size (number\nof bacteria, log10 transformed)") +  # Stacking y-axis label
+  ggtitle("Comparison of exponential and logistic\nmodels of bacterial population growth") +  # Stacking title
+  theme_bw() +
+  theme(
+    legend.title = element_blank(),
+    plot.title = element_text(face = "bold", hjust = 0.5),  # Centering title with hjust
+    axis.title = element_text(face = "bold"), # Emboldening axes labels
+    legend.text = element_text(face = "bold") # Emboldening legend labels
+  )
+```
 
-
-
-
-
-
-
-
-
+This graph illustrates the difference between exponential and logistic models of bacterial population growth. The graph suggests that over short time periods, accurate forecasting of bacterial population size may be achieved using an exponential growth model, while over long time periods, accurate forecasting of bacterial population size can only be achieved using a logistic growth model that accounts for limited resources in the environment defined by carrying capacity (K).
