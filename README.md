@@ -4,7 +4,9 @@
 
 ## Plotting data
 
-Script 1 (plot_data.R) plots the dataset from experiment.csv (a simulated experiment that visualises the logistic model). The x-axis shows time (t) and the y-axis shows the number of bacteria (N). Plotting was conducted using ggplot2 package on R to produce publication-quality figures. 
+Experimental data from the file 'experiment.csv' are measurements recorded from a test tube containing 900μl of growth media and an isolate of the bacterium Escherichia coli suspended in 100μl of the same media. An Escherichia coli isolate divides and generates a population in culture. When the population size of this bacterium in culture is small, this corresponds with the lag phase of bacterial population growth. After the exponential phase of bacterial population growth, the population size of this bacterium in culture is large. This then corresponds with the stationary phase of bacterial population growth.
+
+Script 1 (plot_data.R) plots the dataset from experiment.csv. The x-axis shows time (t) and the y-axis shows the number of bacteria (N). Plotting was conducted using ggplot2 package on R to produce publication-quality figures. 
 
 The second plot in this script is a semi-log plot with a linear x-axis and a log-transferred y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
 
@@ -43,7 +45,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme_bw() +
   theme(legend.position = 'none')
 ```
-#### Logistic growth plot
+#### Logistic growth plot lag phase, exponential phase and stationary phase of bacterial population growth in temporal order
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
 #### Semi-log plot showing relationship between t and N
@@ -67,7 +69,7 @@ library(dplyr)
 # Scenario 1. K >> N0, t is small
 
 data_subset1 <- growth_data %>% 
-  filter(t<1500) %>% # Filtering dataset to timepoints below t=1500 to ensure capture only of period of exponential growth of E. coli population
+  filter(t<1500) %>% # Filtering dataset to timepoints below t=1500 to ensure capture only of period of exponential growth of E. coli population.
   mutate(N_log = log(N))
 
 linearmodel1 <- lm(N_log ~ t, data_subset1)
@@ -75,7 +77,7 @@ summary(linearmodel1)
 
 #Scenario 2. N(t) = K
 
-data_subset2 <- growth_data %>% filter(t>2500) # Filtering dataset to timepoints above t=2500 to ensure capture of E. coli population held at environmental carrying capacity
+data_subset2 <- growth_data %>% filter(t>2500) # Filtering dataset to timepoints above t=2500 to ensure capture of E. coli population held at the stationary phase at environmental carrying capacity.
 
 linearmodel2 <- lm(N ~ 1, data_subset2)
 summary(linearmodel2)
