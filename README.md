@@ -44,15 +44,12 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme(legend.position = 'none')
 ```
 #### Logistic growth plot
-
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
 #### Semi-log plot showing relationship between t and N
-
 ![image](https://github.com/user-attachments/assets/c1dc79dd-5996-4225-ad95-5cf1d46cc995)
 
 #### Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) and large (red)).
-
 ![image](https://github.com/user-attachments/assets/e092a0f4-6059-49ca-a446-88124d35b127)
 
 ## Fitting linear models
@@ -91,7 +88,8 @@ Script 3 (plot_data_and_model.R) produces the 'logistic_function' function. This
 
 ## Linear Model 1 (small t)
 
-#### INSERT summary table for Linear Model 1
+#### Summary table for Linear Model 1
+![image](https://github.com/user-attachments/assets/8bdcd0f7-e606-4da3-a942-758761c646d2)
 
 The summary table provides the parameters for Linear Model 1 (in the form 'y = a + bx') where $$ln(N) = ln(N0) + rt$$
 
@@ -101,7 +99,8 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 ## Linear Model 2 (large t)
 
-#### INSERT summary table for Linear Model 2
+#### Summary table for Linear Model 2
+![image](https://github.com/user-attachments/assets/5c94705c-4645-4f4d-acb1-fca6c98fb327)
 
 Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60000000000**.
 
@@ -124,13 +123,22 @@ logistic_function <- function(t) {
 
 # Superimposing model over experimental data
 
-ggplot(aes(t,N), data = growth_data) +
+install.packages("ggplot2")
+library(ggplot2)
+
+ggplot(aes(t, N), data = growth_data) +
   
-  geom_function(fun=logistic_function, colour="red") +
+  geom_function(fun=logistic_function, colour="darkorange") +
   
-  geom_point()
+  geom_point() +
+  
+  labs(
+    x = "Time (minutes)",
+    y = "E. coli population size (number of bacteria)"
+  )
 ```
-#### INSERT figure of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
+#### Plot of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
+![image](https://github.com/user-attachments/assets/ab450e5f-ad83-4cba-bcea-2c2e5a1be4a5)
 
 This figure validates determination by linear model analyses of the logistic parameters underlying the experimental dataset, since the superimposed linear function is consistent with experimental datapoints. 
 
@@ -187,6 +195,8 @@ ggplot() +
   )
 ```
 
-#### INSERT figure comparing exponential and logistic growth curves.
+#### Plot comparing exponential and logistic growth curves.
+![image](https://github.com/user-attachments/assets/450ec5ce-df76-4065-ad3b-f832cfdfa255)
+
 
 This graph illustrates the difference between exponential and logistic models of E. coli population growth. The graph suggests that over short time periods (t<1750 minutes), accurate forecasting of E. coli population size in-vitro is possible using an exponential growth model. The graph suggests that over long time periods, accurate forecasting of E. coli population size in-vitro can only be achieved using a logistic growth model that accounts for limited resources in the growth environment in-vitro, defined by carrying capacity (K). This is because the exponential growth model inaccurately predicts continual population growth under limited resource availability in the culture environment.
