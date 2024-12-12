@@ -98,7 +98,7 @@ Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**.
 
 #### Insert summary table for Linear Model 2
 
-Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60,000,000,000**
+Per the summary table, intercept (K) is 6 x 10^10; therefore, **K is 60,000,000,000**.
 
 Confirmation of these logistic parameters was achieved by superimposing my linear function (with these logistic parameters) over experimental datapoints. This is shown by the figure below, generated using filled-in Script 3 (plot_data_and_model.R) as below.
 
