@@ -47,7 +47,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme_bw() +
   theme(legend.position = 'none')
 ```
-#### Logistic growth plot (lag phase, exponential phase and stationary equilibrium phase of bacterial population growth in temporal order)
+#### Logistic growth plot (lag phase (t≤1500), exponential phase (1500≤t≤2500) and stationary equilibrium phase (t≥2500) of bacterial population growth in temporal order)
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
 The graph plateaus indicating E. coli population reaching of the carrying capacity (maximum population size of E. coli that can be sustained by the test-tube culture environment) and entry into stationary equilibrium population growth phase.
