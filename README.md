@@ -47,7 +47,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
   theme_bw() +
   theme(legend.position = 'none')
 ```
-#### Logistic growth plot (lag phase, exponential phase and stationary phase of bacterial population growth in temporal order)
+#### Logistic growth plot (lag phase, exponential phase and stationary equilibrium phase of bacterial population growth in temporal order)
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
 #### Semi-log plot showing relationship between t and N
