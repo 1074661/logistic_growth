@@ -50,6 +50,8 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
 #### Logistic growth plot (lag phase, exponential phase and stationary equilibrium phase of bacterial population growth in temporal order)
 ![image](https://github.com/user-attachments/assets/516c5c4e-8a08-4a8f-958b-db2cf1131afd)
 
+The graph plateaus indicating E. coli population reaching of the carrying capacity (maximum population size of E. coli that can be sustained by the test-tube culture environment) and entry into stationary equilibrium population growth phase.
+
 #### Semi-log plot showing relationship between t and N
 ![image](https://github.com/user-attachments/assets/c1dc79dd-5996-4225-ad95-5cf1d46cc995)
 
@@ -208,4 +210,4 @@ ggplot() +
 #### Plot comparing exponential and logistic growth curves.
 ![image](https://github.com/user-attachments/assets/8710f49e-01e1-4adc-a0e3-2096ccbae9f2)
 
-This graph illustrates the difference between exponential and logistic models of E. coli population growth. The graph suggests that over short time periods (t<1750 minutes), accurate forecasting of E. coli population size in-vitro is possible using an exponential growth model. The graph suggests that over long time periods, accurate forecasting of E. coli population size in-vitro can only be achieved using a logistic growth model that accounts for limited resources in the growth environment in-vitro, defined by carrying capacity (K). This is because the exponential growth model inaccurately predicts continual population growth under limited resource availability in the culture environment.
+This graph illustrates the difference between exponential and logistic models of E. coli population growth. The graph suggests that over short time periods (t<1750 minutes), accurate forecasting of E. coli population size in-vitro is possible using an exponential growth model. The graph suggests that over long time periods (t>1750 minutes), accurate forecasting of E. coli population size in-vitro is only possible using a logistic growth model that accounts for limited resources in the culture, governing environmental carrying capacity (K). This is because the exponential growth model inaccurately predicts continual bacterial population growth under limiting resources in the test-tube.
