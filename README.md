@@ -8,7 +8,7 @@ From a simulated experiment, the experimental data in the file 'experiment.csv' 
 
 Script 1 (plot_data.R) plots the dataset from experiment.csv. The x-axis shows time (t) and the y-axis shows the number of bacteria (N). Plotting was conducted using ggplot2 package on R to produce publication-quality figures. 
 
-The second plot in this script is a semi-log plot with a linear x-axis and a log-transformed y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot is useful for future linear model analysis. 
+The second plot in this script is a semi-log plot with a linear x-axis and a log-transformed y-axis. This semi-log plot shows that at early time points, there is an increasing linear relationship, while at later time points, population size remains constant. This semi-log plot will be useful for future linear model analysis. 
 
 ```{r}
 
