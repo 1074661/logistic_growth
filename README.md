@@ -53,7 +53,7 @@ ggplot(aes(t,N, color = threshold), data = growth_data) +
 #### Semi-log plot showing relationship between t and N
 ![image](https://github.com/user-attachments/assets/c1dc79dd-5996-4225-ad95-5cf1d46cc995)
 
-#### Semi-log plot showing relationship between t and N (with colour demarcating when t is low (light blue) and high (red)).
+#### Semi-log plot showing relationship between t and N (with colour demarcating when t is small (light blue) and large (red)).
 ![image](https://github.com/user-attachments/assets/e092a0f4-6059-49ca-a446-88124d35b127)
 
 ## Fitting linear models
@@ -91,7 +91,7 @@ Script 3 (plot_data_and_model.R) produces the 'logistic_function' function. This
 
 ## Results
 
-## Linear Model 1 (low t)
+## Linear Model 1 (small t)
 
 #### Summary table for Linear Model 1
 ![image](https://github.com/user-attachments/assets/8bdcd0f7-e606-4da3-a942-758761c646d2)
@@ -102,7 +102,7 @@ Per the summary table, intercept (ln(N0)) is 6.8941709; therefore, **N0 is 986**
 
 Per the summary table, t (r) is 0.0100086; therefore, **r is 0.01**. 
 
-## Linear Model 2 (high t)
+## Linear Model 2 (large t)
 
 #### Summary table for Linear Model 2
 ![image](https://github.com/user-attachments/assets/5c94705c-4645-4f4d-acb1-fca6c98fb327)
