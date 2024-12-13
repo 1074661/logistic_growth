@@ -143,12 +143,12 @@ ggplot(aes(t, N), data = growth_data) +
     y = "E. coli population size (number of bacteria)"
   )
 ```
-#### Plot of logistic function with logistic parameters obtained from linear model superimposed over experimental datapoints
+#### Plot of logistic function (with logistic parameters obtained from linear model) superimposed over experimental datapoints
 ![image](https://github.com/user-attachments/assets/ab450e5f-ad83-4cba-bcea-2c2e5a1be4a5)
 
 This figure validates determination by linear model analyses of the logistic parameters underlying the experimental dataset, since the superimposed linear function is consistent with experimental datapoints. 
 
-This enables use of my logistic function for interpolation of population size at specified timepoints. 
+This enables use of my logistic function for interpolation of population size at specific timepoints. 
 
 # Question 2
 
